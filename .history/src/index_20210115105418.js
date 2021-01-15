@@ -12,7 +12,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={createStore(reducers)}>
+    <Provider>
       <App />
     </Provider>
   </React.StrictMode>,
