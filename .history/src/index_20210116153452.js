@@ -14,7 +14,7 @@ import thunk from 'redux-thunk';
 import * as serviceWorker from './serviceWorker';
 
 
-const store = createStore(reducers, applyMiddleware(thunk));
+const store = createStore(reducers, applyMiddleware);
 
 ReactDOM.render(
   <React.StrictMode >

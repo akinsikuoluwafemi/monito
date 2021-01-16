@@ -7,7 +7,7 @@ import PostList from './PostList'
 function App() {
   return (
     <div>
-      <PostList/>
+      <po
     </div>
   );
 }

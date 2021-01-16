@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore } from 'redux';
 import reducers from './reducers';
-import thunk from 'redux-thunk';
 
 
 
@@ -14,13 +13,13 @@ import thunk from 'redux-thunk';
 import * as serviceWorker from './serviceWorker';
 
 
-const store = createStore(reducers, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <React.StrictMode >
-    <Provider store={store}>
-      <App />
+  <React.StrictMode>
+    <Provider>
+      
     </Provider>
+      <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

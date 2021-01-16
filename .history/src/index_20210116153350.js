@@ -14,11 +14,10 @@ import thunk from 'redux-thunk';
 import * as serviceWorker from './serviceWorker';
 
 
-const store = createStore(reducers, applyMiddleware(thunk));
 
 ReactDOM.render(
   <React.StrictMode >
-    <Provider store={store}>
+    <Provider store={createStore(reducers)}>
       <App />
     </Provider>
   </React.StrictMode>,
