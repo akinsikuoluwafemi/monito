@@ -4,8 +4,8 @@ import './App.css';
 
 function App() {
   return (
-    <div style={{ display: 'flex' }}>
-      App
+    <div style={{ display: 'flex' }} >
+      <App
     </div>
   );
 }

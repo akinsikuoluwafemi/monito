@@ -11,7 +11,9 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={createStore(reducers)}>
       <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
