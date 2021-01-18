@@ -4,7 +4,7 @@ const initialState = {
     movies: [],
     query: '',
     showBanner: false,
-    loading: false
+    loading: 
 }
 
 

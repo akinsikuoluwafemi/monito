@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 
-export const  fetchMovies  async = (query)  => dispatch => {
+export const  fetchMovies  async = ()  => dispatch => {
     
     let result = await axios
       .get(`https://www.omdbapi.com/?apikey=2a3aa076&s=${query}`)
